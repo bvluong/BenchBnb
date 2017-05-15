@@ -6,10 +6,14 @@ class BenchIndexItem extends React.Component {
   }
 
   render() {
-    const { description } = this.props.bench;
+    const { description, lat, lng } = this.props.bench;
     return (
       <div>
-        {description}
+        <span>{description}</span>
+        <br></br>
+        <span>{lat}</span>
+        <br></br>
+        <span>{lng}</span>
       </div>
     );
   }
