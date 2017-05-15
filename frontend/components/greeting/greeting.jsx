@@ -8,7 +8,8 @@ class Greeting extends React.Component {
 
   render () {
     const { currentUser } = this.props;
-    if (!!currentUser) {
+    console.log(this.props);
+    if (currentUser) {
       return (
         <div>
           <h3>{`Welcome ${currentUser.username}`}</h3>
