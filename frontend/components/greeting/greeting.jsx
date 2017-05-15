@@ -7,7 +7,7 @@ class Greeting extends React.Component {
   }
 
   render () {
-    const { currentUser } = this.props
+    const { currentUser } = this.props;
     if (!!currentUser) {
       return (
         <div>
